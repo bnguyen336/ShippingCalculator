@@ -29,14 +29,16 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/weightEditText"
-        android:selectAllOnFocus="false"
+        android:selectAllOnFocus="true"
         android:focusableInTouchMode="true"
         android:focusable="true"
         android:layout_below="@+id/textView"
         android:textColor="@android:color/transparent"
         android:cursorVisible="false"
         android:layout_above="@+id/textView4"
-        android:backgroundTint="@color/accent_material_light"/>
+        android:backgroundTint="@color/accent_material_light">
+    <requestFocus/>
+    </EditText>
 
     <TextView
         android:layout_width="wrap_content"

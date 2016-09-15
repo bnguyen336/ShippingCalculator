@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                     weightInOunces = Integer.parseInt(charSequence.toString());
                 }
                 currentItem.setWeight(weightInOunces);
-                weightTextView.setText(charSequence.toString());
+                weightTextView.setText(charSequence.toString() + " + " + charSequence.length());
                 addedCostTextView.setText(currency.format(currentItem.getAddedCost()));
                 totalTextView.setText(currency.format(currentItem.getTotalCost()));
             } catch (NumberFormatException e) {
